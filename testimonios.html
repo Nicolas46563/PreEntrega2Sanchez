@@ -4,46 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonios - Empresa Fantasía</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Descubre lo que dicen nuestros clientes sobre los servicios de Empresa Fantasía. Testimonios reales de satisfacción y calidad.">
+    <meta name="keywords" content="Empresa Fantasía, Testimonios, Clientes, Satisfacción, Calidad">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="SCSS/styles.css">
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-4">
         <h1>Empresa Fantasía</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="acerca.html">Acerca de Nosotros</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="testimonios.html">Testimonios</a></li>
+        <nav class="menu">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca de Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="testimonios.html">Testimonios</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Testimonios -->
         <section id="testimonios">
-            <h2>Testimonios</h2>
-            <div class="testimonial">
-                <img src="images/avatar1.png" alt="Avatar de Juan Pérez">
-                <p>"¡Excelente servicio! Me ayudaron a resolver mi problema rápidamente."</p>
-                <p>- Juan Pérez</p>
+            <h2 class="text-center mb-4">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial p-3 border rounded">
+                        <img src="Imagenes/avatar1.png" alt="Avatar de Juan Pérez" class="miniatura mb-3 rounded-circle">
+                        <p>"¡Excelente servicio! Me ayudaron a resolver mi problema rápidamente."</p>
+                        <p class="font-weight-bold">- Juan Pérez</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial p-3 border rounded">
+                        <img src="Imagenes/avatar2.png" alt="Avatar de María González" class="miniatura mb-3 rounded-circle">
+                        <p>"Estoy muy contento con los resultados. Sin duda, los recomendaré a mis amigos."</p>
+                        <p class="font-weight-bold">- María González</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial p-3 border rounded">
+                        <img src="Imagenes/avatar3.png" alt="Avatar de Ana Rodríguez" class="miniatura mb-3 rounded-circle">
+                        <p>"Estoy muy impresionado con la calidad del servicio. ¡Definitivamente volveré a utilizar sus servicios en el futuro!"</p>
+                        <p class="font-weight-bold">- Ana Rodríguez</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial p-3 border rounded">
+                        <img src="Imagenes/avatar4.png" alt="Avatar de Carlos Gómez" class="miniatura mb-3 rounded-circle">
+                        <p>"¡Increíble atención al cliente! Me sentí muy bien atendido en todo momento. ¡Altamente recomendado!"</p>
+                        <p class="font-weight-bold">- Carlos Gómez</p>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial">
-                <img src="images/avatar2.png" alt="Avatar de María González">
-                <p>"Estoy muy contento con los resultados. Sin duda, los recomendaré a mis amigos."</p>
-                <p>- María González</p>
-            </div>
-            <div class="testimonial">
-                <img src="images/avatar3.png" alt="Avatar de Ana Rodríguez">
-                <p>"Estoy muy impresionado con la calidad del servicio. ¡Definitivamente volveré a utilizar sus servicios en el futuro!"</p>
-                <p>- Ana Rodríguez</p>
-            </div>
-            <div class="testimonial">
-                <img src="images/avatar4.png" alt="Avatar de Carlos Gómez">
-                <p>"¡Increíble atención al cliente! Me sentí muy bien atendido en todo momento. ¡Altamente recomendado!"</p>
-                <p>- Carlos Gómez</p>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Empresa Fantasía. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
