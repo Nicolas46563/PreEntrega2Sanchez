@@ -8,11 +8,13 @@
     <meta name="description" content="Descubre los servicios ofrecidos por Empresa Fantasía, incluyendo diseño y desarrollo web, optimización de SEO, desarrollo de aplicaciones móviles, marketing digital y más.">
     <meta name="keywords" content="Empresa Fantasía, Servicios, Diseño Web, Desarrollo Web, SEO, Aplicaciones Móviles, Marketing Digital">
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="SCSS/styles.css">
+    <link rel="stylesheet" href="/assets/SCSS/styles.css">
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.0.0/dist/cdn.min.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -20,12 +22,12 @@
         <h1>Empresa Fantasía</h1>
         <nav class="menu">
             <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca de Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="testimonios.html">Testimonios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/assets/pages/servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/assets/pages/contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/assets/pages/acerca.html">Acerca de Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/assets/pages/galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/assets/pages/testimonios.html">Testimonios</a></li>
             </ul>
         </nav>
     </header>
@@ -33,9 +35,9 @@
     <!-- Main Content -->
     <main class="container my-5">
         <!-- Nuestros Servicios -->
-        <section class="cuadrado mb-4 p-3 border rounded">
-            <h2>Nuestros Servicios</h2>
-            <ul class="list-unstyled">
+        <section class="cuadrado mb-4 p-3 border rounded" x-data="{ open: false }">
+            <h2 @click="open = !open" class="mb-0 cursor-pointer">Nuestros Servicios <span x-text="open ? '-' : '+'"></span></h2>
+            <ul class="list-unstyled" x-show="open" x-transition>
                 <li>Diseño y desarrollo de sitios web personalizados</li>
                 <li>Optimización de SEO para mejorar el ranking en motores de búsqueda</li>
                 <li>Desarrollo de aplicaciones móviles multiplataforma</li>
@@ -45,10 +47,10 @@
             </ul>
         </section>
         <!-- Por qué elegirnos -->
-        <section class="cuadrado mb-4 p-3 border rounded">
-            <h2>Por qué elegirnos</h2>
-            <p>Somos una empresa comprometida con la excelencia y la satisfacción del cliente. Aquí algunas razones para elegir nuestros servicios:</p>
-            <ul class="list-unstyled">
+        <section class="cuadrado mb-4 p-3 border rounded" x-data="{ open: false }">
+            <h2 @click="open = !open" class="mb-0 cursor-pointer">Por qué elegirnos <span x-text="open ? '-' : '+'"></span></h2>
+            <p x-show="open" x-transition>Somos una empresa comprometida con la excelencia y la satisfacción del cliente. Aquí algunas razones para elegir nuestros servicios:</p>
+            <ul class="list-unstyled" x-show="open" x-transition>
                 <li>Experiencia: Contamos con un equipo experimentado y altamente capacitado en cada área de nuestro servicio.</li>
                 <li>Calidad: Nos esforzamos por ofrecer productos y servicios de la más alta calidad, garantizando la satisfacción del cliente.</li>
                 <li>Innovación: Estamos en constante búsqueda de nuevas tecnologías y métodos para mejorar nuestros servicios y mantenernos a la vanguardia del mercado.</li>
@@ -64,9 +66,5 @@
         <p>&copy; 2024 Empresa Fantasía. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- JavaScript de Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

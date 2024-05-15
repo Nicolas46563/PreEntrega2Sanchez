@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Juan Pérez",
+        "puesto": "CEO",
+        "descripcion": "Lidera la empresa con más de 20 años de experiencia en el sector.",
+        "imagen": "/assets/images/equipo1.jpeg"
+    },
+    {
+        "nombre": "María González",
+        "puesto": "CTO",
+        "descripcion": "Encargada de la innovación tecnológica y el desarrollo de productos.",
+        "imagen": "/assets/images/equipo2.jpeg"
+    },
+    {
+        "nombre": "Ana Rodríguez",
+        "puesto": "CFO",
+        "descripcion": "Gestiona las finanzas y asegura la estabilidad económica de la empresa.",
+        "imagen": "/assets/images/equipo3.jpeg"
+    },
+    {
+        "nombre": "Carla Gómez",
+        "puesto": "CMO",
+        "descripcion": "Dirige las estrategias de marketing y la comunicación con clientes.",
+        "imagen": "/assets/images/equipo4.jpeg"
+    }
+]
